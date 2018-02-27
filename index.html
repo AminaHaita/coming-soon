@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coming Soon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/vegas/vegas.min.css">        
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+
+
+
+    </head>
+    <body>
+
+        <div class="background">
+            <a class="btn logo" href="#">LOGO</a>
+            <div class="Box">
+                <div class="container">
+                    <div class="row title">
+                        <h1> WE'RE COMING </h1>
+
+                    </div>
+                    <div class="row count">
+                        <ul id="countdown">
+                        </ul>
+                    </div>
+                    <div class="row details">
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nisi adipisci quod consequuntur officia possimus ullam, voluptatem ratione dolorem voluptatum eum fugit a provident repellat voluptas sed quos. Consectetur, explicabo.
+                          </p>
+                          <span class="eff-info"></span>
+                         <a class="btn btn-info info open-more-info" href="#more-info" data-effect="mfp-zoom-in">more info</a>
+                                
+                         <a class="btn btn-primary notify open-notify" href="#notify" data-effect="mfp-zoom-in">notify me</a>
+                    </div>
+ 
+                    <!--  -->
+                    <div id="more-info" class="more-info-popup mfp-with-anim mfp-hide container">
+                            <div class="about row">
+                                 <h2>ABOUT US</h2>
+                         
+                                 <p>
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aperiam dolorum pariatur nobis repudiandae quibusdam odit! In ipsa impedit deserunt doloribus laboriosam, ducimus ab, nulla atque cum dignissimos eos iusto voluptate mollitia distinctio beatae excepturi ullam at officia. Repellendus expedita quam inventore autem, repudiandae obcaecati atque totam accusantium et vitae perspiciatis sint eaque distinctio fugit fuga tempora ratione corporis doloribus!
+                                 </p>       
+                            </div> 
+                         
+                             <div class="contact row">
+                                 <h2> CONTACT US </h2>
+                         
+                                 <div class="address-map row">
+                                     <div class="address col-lg-4 col-md-4 col-sm-12">
+                                        <h4>Contact Info</h4> 
+                                        
+                                            <ul class="contact-info">
+                                                <li>
+                                                <i class="fa fa-phone"></i>
+                                                    <phone>+000 0 00 00 00 00</phone>
+                                                </li>
+                                                
+                                                <li>
+                                                <i class="fa fa-envelope-o"></i>
+                                                <a href="#name">Contact@Company.com</a>
+                                                </li>
+                                                
+                                                <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                <address>X xxxxx xxxx xxxx, Casablanca, Morocco</address>
+                                                </li>
+                                            </ul>
+                                        
+                                 
+                                             
+                                     </div>
+                                     <div class="map  col-lg-7 col-md-7 col-sm-12">
+                                         <h4>Map</h4>
+                                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.3700728593108!2d-7.584879685402732!3d33.5697394504507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzExLjEiTiA3wrAzNCc1Ny43Ilc!5e0!3m2!1sfr!2s!4v1506021039739" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                                            <div id="map" style="width:100%;height:300px;"></div>
+
+                                     </div>
+                                 </div> 
+                                 <div class="message-form row">
+                                     <h4>Contact Form</h4>
+                                         <form id="contactForm" action="inc/contact.php" method="post" class="form-group">
+                                             <div class="row">
+                                               <div class="col-lg-6 col-md-6 col-sm-12 name">
+                                                <input type="text" name="name" id="name" placeholder="Your Name" class="form-control">
+                                               </div>      
+                                                <div class="col-lg-6 col-md-6 col-sm-12 email"> 
+                                                 <input type="email" name="email" id="email" placeholder="Your Email" class="form-control" required>   
+                                                </div> 
+                                            </div>
+                                                <div class="row">
+                                                   <div class="col">
+                                                        <textarea name="message" id="message" rows="10" placeholder="Your Message" class="form-control" required></textarea>
+                                                    </div>  
+                                                    
+            
+                                                    <input id="btn-submit" type="submit" value="Send" class="btn pull-right btn-default btn-framed">
+                                                </div>
+                                         </form>
+                        				
+                        					<div id="sendingMessage" class="statusMessage">
+                        						<p><i class="fa fa-spin fa-spinner"></i> Sending your message. Please wait...</p>
+                        					</div>
+                        					<div id="successMessage" class="successmessage">
+                        						<p><i class="fa fa-check"></i> Thanks for sending your message! We'll get back to you shortly.</p>
+                        					</div>
+                        					<div id="failureMessage" class="errormessage">
+                        						<p><i class="fa fa-close"></i> There was a problem sending your message. Please try again.</p>
+                        					</div>
+                        					<div id="incompleteMessage" class="statusMessage">
+                        						<p><i class="fa fa-warning"></i> Please complete all the fields in the form before sending.</p>
+                        					</div>
+                                 </div>
+                         
+                             </div>
+                            
+                         </div>
+                    <!-- end Popup -->
+                    
+                    <div id="notify" class="notify-popup mfp-with-anim mfp-hide container">
+                            <div class="row"> 
+                                <h2 class="notify-h2">Subscribe</h2>
+                                <p class="notify-notice">Stay updated with our newsletter</p>
+                            </div>
+                            <div class="row">
+                                <form action="inc/subscribe.php" method="post" id="form_email" class="form-group notify-form">
+                                    <input type="email" class="form-control-lg notify-email" id="nemail" name="notify_email" placeholder="Type your Email" required>
+                                        <br>
+                                    <button type="submit" class="btn btn-default notify-btn">Subscribe</button>
+                                </form>
+                            </div>
+                         <span id="result"></span>
+                    </div>
+
+
+                </div>
+            </div>
+            <footer>
+            <div class="social-icons">
+            <a href="#" ><i class="fa fa-facebook"></i></a>
+            <a href="#" ><i class="fa fa-twitter"></i></a>
+            <a href="#" ><i class="fa fa-youtube-play"></i></a>
+            <a href="#" ><i class="fa fa-instagram"></i></a>
+            <a href="#" ><i class="fa fa-pinterest"></i></a>
+            <a href="#" ><i class="fa fa-google-plus"></i></a>
+            </div>
+            </footer>
+        </div>
+
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/countdown/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/vegas/vegas.min.js"></script>    
+    <script src="assets/js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3yGLcIvYI8f2PgScgurzchuW906WuUQA&callback=myMap"></script>
+    </body>
+</html>

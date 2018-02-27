@@ -1,0 +1,39 @@
+/******* Style Form  *******/
+h2{
+    margin: 2% 0;
+}
+
+.more-info{
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 2% 5%;
+    width:auto;
+    max-width: 75%;
+    margin: 20px auto;
+  }
+
+
+.message-form .row {
+    margin: 2% 4%;
+}
+
+#message ,#name ,#email{
+    margin-bottom: 1%;
+    width: 100%;
+    border-radius: 0;
+}
+
+
+/* media + width : 750 */
+
+.map {
+    float: right;
+}
+
+#btn-submit{
+    margin-right: 2%;
+    border-radius: 0;
+}

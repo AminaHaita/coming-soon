@@ -1,0 +1,646 @@
+body, html{
+    
+        height: 100%;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        position: relative;
+        color:white;
+        /* background-color: #191919; */
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    .background {
+      /* Set rules to fill background */
+      /* background-image: url('../img/comingsoon-bg2.jpg'); */
+      /* -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; */
+      min-height: 100%;
+      min-width: 100%;
+        
+      /* Set up proportionate scaling */
+      width: 100%;
+      height: auto;
+        
+      /* Set up positioning */
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    
+    .logo{
+        background-color: rgba(0,0,0,.075) !important;
+        border-radius: 0 !important;
+        border-color: rgba(204, 204, 204, 0.48) !important;
+        color: white !important;
+        font-size: 20px;
+        margin: 2% 0% 0% 2%;
+    }
+    
+    .row h1{
+        margin-bottom: 1.5rem !important;
+        margin-left: 4%;
+        font-size: 60px;
+        font-family: 'lato',sans-serif;
+    }
+    
+    
+    .Box{
+        text-align:center;
+        padding: 5% 15% 0% 15%;
+        margin: 0% 0% 0% 0%;
+    }
+    
+
+
+    /* ul#countdown li:not(:last-child)::after{
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        -moz-border-radius: 7.5px;
+        -webkit-border-radius: 7.5px;
+        border-radius: 7.5px;
+        background-color: #0da9ab;
+        //margin-bottom:60%;
+        //margin-right:-75%;
+        transform: translateY(70px);
+        //transform: translateX(60px);
+        position:absolute;
+        top:0;
+        bottom:0;
+        margin:auto;
+        //left:34%; 
+     }   */
+    
+    /* ul#countdown li:first-child {
+       margin:0 -60px 0 0!important; 
+    } */
+    
+/****************************************************************************/
+/******************************* Count Down **********************************/
+/****************************************************************************/
+    
+    #clock{
+        font-size: 75px !important;
+    }
+    
+    .count{
+        position: relative;
+        transform: translateY(-55%);
+        
+    }
+
+    ul#countdown {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      padding: 15px 0 20px 0;
+      color: #fff;
+/*       border: 1px solid #adafb2; */
+      border-width: 1px 0;
+      overflow: hidden;
+      font-family: 'Lato', sans-serif;
+      font-weight: bold;
+    }
+    ul#countdown li {
+      margin: 18% 0 0 0;
+      padding: 0;
+      display: inline-block;
+      width: 20%;
+      font-size: 67px;
+      text-align: center;
+    }
+    ul#countdown li .label {
+      color: #adafb2;
+      font-size: 18px;
+      font-size: 1.5vw;
+      text-transform: uppercase;
+    }
+
+/****************************************************************************/
+/******************************* Details **********************************/
+/****************************************************************************/
+
+
+    .details{
+       z-index:2;
+       margin-top: -18%;
+       padding: 0 25%;
+    }
+    
+    p{
+        margin-bottom:2rem;
+    }
+    .info{
+        background-color: rgba(0, 0, 0, 0.43) !important;
+        border-radius: 0 !important;
+        border-color: rgba(204, 204, 204, 0.48) !important;
+        color: white !important;
+        font-size: 19px;
+        margin-right: 23px;
+    }
+    
+    .info:hover{
+        background-color: rgba(4, 203, 203, 0.91) !important;
+        text-transform: capitalize;
+        font-size:21px;
+        text-align:center;
+        -webkit-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+    }
+
+
+    .notify{
+        background-color: rgba(0, 0, 0, 0.43) !important;
+        border-radius: 0 !important;
+        border-color: rgba(204, 204, 204, 0.48) !important;
+        color: white !important;
+        font-size: 18px;
+    }
+    
+    .notify:hover{
+        background-color: rgba(4, 203, 203, 0.91) !important;
+        text-transform: capitalize;
+        font-size:21px;
+        text-align:center;
+        -webkit-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+    }
+    
+    footer{
+        bottom: 0;
+        position: absolute;
+        margin-bottom: 1%;
+        margin-left: 2%;
+        font-size: 150%;
+        width:100%
+    }
+    .social-icons a{
+        color:white;
+        margin-right: 1% !important;
+    }
+
+    .social-icons a:hover{
+        color:rgba(4, 203, 203, 0.91);
+    } 
+
+
+/**************************************************************/
+/************************* Zoom effect ************************/
+/**************************************************************/
+
+.mfp-zoom-in {
+    /* start state */
+    /* animate in */
+    /* animate out */
+  }
+  .mfp-zoom-in .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+  }
+  .mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+  .mfp-zoom-in.mfp-ready .mfp-with-anim {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.8;
+  }
+  .mfp-zoom-in.mfp-removing .mfp-with-anim {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  .mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
+  }
+      
+
+/****************************************************************************/
+/******************************* Popup **********************************/
+/****************************************************************************/    
+
+h2{
+    margin: 4% 0;
+    text-shadow: 1px 1px 7px #fbfbfb;
+}
+
+
+.more-info-popup {
+    position: relative;
+    background: rgba(27, 26, 27, 0.63);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 5% 10%;
+    width:auto;
+    max-width: 85%;
+    margin: 20px auto;
+  }
+
+.address .contact-info{
+    font-size:13px;
+    margin-top:20%;
+    font-family: 'Lato', sans-serif;
+    list-style:none;
+    padding:0;
+}
+
+.contact-info li{
+  padding:2%;
+}
+
+
+
+.contact-info a{
+    color:white;
+    text-decoration:underline;
+}
+
+.contact-info i{
+    margin-right:5%;
+    float: left;
+}
+
+.contact-info Address{
+    margin-left:13%;
+}
+
+
+
+.address-map h4{
+    margin-bottom:5%;
+}
+
+.map{
+    opacity:.7;
+}
+
+.message-form {
+    margin-top:3%;
+}
+
+.message-form h4 {
+    margin:6% 0 2% 4%;
+}
+
+.message-form .row {
+    margin: 2% 4%;
+}
+
+.email  {
+    padding: 0 0 0 0;
+}
+
+.name {
+    padding: 0 0 0 0;
+
+}
+
+#message ,#name ,#email{
+    margin-bottom: 1%;
+    width: 100%;
+    color: white;
+    border-radius: 0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+
+#btn-submit{
+    margin-right: 0%;
+    border-radius: 0;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0.3);
+    margin-top: 2%;
+}
+
+
+
+.statusMessage, .successmessage, .errormessage {
+	display: none;
+	margin: auto;
+	width: 90%;
+	height: auto;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	border: 1px solid rgba(225, 225, 225, 0.4);
+	margin: 0 auto 25px auto;
+	/*-moz-border-radius: 5px;*/
+	/*-webkit-border-radius: 5px;*/
+	/*border-radius: 5px;*/
+	color: #000;
+}
+
+.statusMessage i {
+	color:#3498DB;
+	font-size:15px;
+	margin-right:5px;
+}
+
+.statusMessage p {
+	margin: 0;
+	padding: 20px;
+	color: #555;
+	font-size: 14px;
+}
+
+.successmessage p {
+	margin: 0;
+	padding: 20px;
+	color: #555;
+	font-size: 14px;
+}
+
+.successmessage i {
+	color:#1abc9c;
+	font-size:15px;
+	margin-right:5px;
+}
+
+.errormessage p {
+	margin: 0;
+	padding: 20px;
+	color: #555;
+	font-size: 14px;
+}
+
+.errormessage i {
+	color:#ff0000;
+	font-size:15px;
+	margin-right:5px;
+}
+
+#incompleteMessage i {
+	color: #f1c40f;
+	font-size:15px;
+	margin-right:5px;
+}
+
+
+
+/****************** Notify *********************/
+
+
+
+.notify-popup{
+    position: relative;
+    background: rgba(27, 26, 27, 0.63);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.notify-h2 {
+    font-size: 40px;
+    margin-top: 0%;
+}
+
+.notify-notice {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 0px 0px 4% 0px;
+}
+
+.notify-email {
+    width: 80%;
+    margin: 0 0 5% 0;
+    color: white;
+    border-radius: 0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.07);
+    text-align: center;
+}
+
+.notify-btn {
+    margin-right: 0%;
+    border-radius: 0;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0.3);
+    font-size: 25px;
+}
+
+
+/****************************************************************************/
+/******************************* Grid View **********************************/
+/****************************************************************************/
+
+     /* Large desktop */
+    @media (min-width: 980px) {
+        
+
+        .more-info-popup {
+            padding: 3% 5%;
+            max-width: 70%;
+            margin: 20px auto;
+          }
+
+        .map {
+            float: right;
+            margin-right:2%;
+        }
+        
+        .email  {
+            padding: 0 0 0 0;
+        }
+
+        .name {
+            padding: 0 2% 0 0;
+        }
+
+
+        ul#countdown li {
+            font-size: 67px;
+          }
+
+        .contact-info li {
+             padding: 4% 0%;
+            }
+          
+     }
+    
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 768px) and (max-width: 979px) {
+
+        .map {
+            float: right;
+            margin-right:2%;
+        }
+
+        .row h1{
+            font-size:40px;
+        }
+
+        .details{
+            margin-top: -15%;
+            padding: 0 10%;
+        }
+
+        p{
+
+            font-size:12px;
+        }
+                
+        
+        ul#countdown li {
+            font-size: 47px;
+          }
+          
+          
+        .address {
+            width:36% !important;
+        }
+
+
+        .contact-info li {
+             padding: 4% 0%;
+            }
+          
+
+        .email  {
+            padding: 0 0 0 0;
+        }
+
+        .name {
+            padding: 0 2% 0 0;
+        }
+        
+
+          
+     }
+    
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 767px) {
+        
+            
+        .Box{
+            text-align:center;
+            padding: 5% 7% 0% 7%;
+            margin: 0% 0% 0% 0%;
+        }
+        
+
+        .row h1{
+            font-size:40px;
+        }
+
+
+        ul#countdown li .label {
+            font-size: 2.5vw;
+          }
+
+        .details{
+            margin-top: -15%;
+            padding: 0 10%;
+        }
+
+        p{
+
+            font-size:12px;
+        }
+                
+        ul#countdown li {
+            font-size: 32px;
+          }
+
+        .contact-info{
+            font-size:15px;
+            margin-top: 7% !important;
+            margin-bottom: 7%;
+        }
+        
+        .contact-info Address {
+            margin-left: 9%;
+        }
+        
+        .email  {
+            padding: 2% 0 0 0;
+        }
+
+        .name {
+            padding: 2% 0 0 0;
+        }
+        
+
+     }
+
+    /* Landscape phones and down */
+    @media (max-width: 480px) {
+        
+    
+        .Box{
+            text-align:center;
+            padding: 5% 3% 0% 3%;
+            margin: 0% 0% 0% 0%;
+        }
+        
+
+
+        .row h1{
+            font-size:36px;
+        }
+
+        ul#countdown li .label {
+            font-size: 3.5vw;
+          }
+
+        .details{
+            margin-top: -20%;
+            padding: 0 10%;
+        }
+
+        p{
+
+            font-size:12px;
+        }
+
+        ul#countdown li {
+            font-size: 27px;
+          }
+        
+        .info { 
+              margin: 0px 27px 15px 27px;  
+        }
+    
+        .notify {
+             margin: 0px 27px 15px 27px; 
+             font-size: 19.5px;         
+        }
+
+        .address .contact-info {
+            font-size: 15px;
+            margin-top: 7%;
+                        
+        }
+        
+
+        .email  {
+            padding: 2% 0 0 0;
+        }
+
+        .name {
+            padding: 2% 0 0 0;
+        }
+
+        .social-icons a{
+            color:white;
+            margin-right: 5% !important;
+        }
+     }
